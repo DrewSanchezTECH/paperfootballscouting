@@ -6,23 +6,28 @@ var epPossible;
 
 var made = 0;
 var attempt = 0;
+var n;
 
-function made(){
-	made += 1;
+function madeTd(){
+	if (n == 1) {
+		document.getElementById("fg").click();
+	}
+	
+	else {
+		made += 1;
+		attempt += 1;
+		document.getElementById("tdMade").innerHTML = "Field Goal";
+		document.getElementById("tdMiss").innerHTML = "Two Point";
+		n = 1;
+	}
+}
+
+function missTd() {
 	attempt += 1;
 }
 
-function miss() {
-	attempt += 1;
-}
 
-function fgMade() {
-	fg += 1;
-	fgPossible += 1;
-}
-
-
-function openCity(evt, cityName) {
+function openTab(evt, cityName) {
 	
     var i, tabcontent, tablinks;
 

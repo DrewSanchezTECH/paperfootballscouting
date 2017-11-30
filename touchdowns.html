@@ -1,46 +1,51 @@
 <!DOCTYPE html>
+<html>
+	<head>
+			<link rel="stylesheet" type="text/css" href="paper.css">
+			<script src="paper.js"></script>
+			<title> Jerry is god </title>
+	</head>
 
-<head>
-		<link rel="stylesheet" type="text/css" href="paper.css">
-		<script src="paper.js"></script>
-		<title> Jerry is god </title>
-</head>
+	<body>
 
-<body>
+	<div class="tab">
+		<button id="td" class="tablinks" onclick="openTab(event, 'Touchdowns')">Touchdowns</button>
+		<button id="fg" class="tablinks" onclick="openTab(event, 'Field Goals')">Field Goals</button>
+		<button id="tp" class="tablinks" onclick="openTab(event, 'Two Points')">Extra Points</button>
+		<button id="st" class="tablinks" onclick="openTab(event, 'Stats')">Stats</button>
+	</div>
 
-<div class="tab">
-	<button class="tablinks" onclick="openCity(event, 'Touchdowns')">Touchdowns</button>
-	<button class="tablinks" onclick="openCity(event, 'Field Goals')">Field Goals</button>
-	<button class="tablinks" onclick="openCity(event, 'Extra Points')">Extra Points</button>
-	<button class="tablinks" onclick="openCity(event, 'Extra Points')">Stats</button>
-</div>
+		<center>
 
-<center>
+			<div id="Touchdowns" class="tabcontent">
+			  <h3>Touchdowns</h3>
+				<p>
+					<button id="tdMade" onclick="madeTd()">Made</button>
+					<button id="tdMiss" onclick="missTd()">Miss</button>
+				</p>
+			</div>
 
-<div id="Touchdowns" class="tabcontent">
-  <h3>Touchdowns</h3>
-	<p>
-	<button onclick="made()">Made</button>
-	<button onclick="miss()">Miss</button>
-	</p>
-</div>
+			<div id="Field Goals" class="tabcontent">
+			  <h3>Field Goals</h3>
+			<p>
+				<button onclick=""></button>
+			</p> 
+			</div>
 
-<div id="Field Goals" class="tabcontent">
-  <h3>Field Goals</h3>
-<p>
-<button onclick=""></button>
-</p> 
-</div>
+			<div id="Extra Points" class="tabcontent">
+			  <h3>Extra Points</h3>
+				<p>
+					<button onclick="madeEp">Made</button>
+					<button onclick="missEp">Miss</button>
+				</p>
 
-<div id="Extra Points" class="tabcontent">
-  <h3>Extra Points</h3>
-  <p>Extra Points is the capital of Japan.</p>
-</div>
+			</div>
 
-<div id="Stats" class="tabcontent">
-  <h3>Stats</h3>
-  <p>Extra Points is the capital of Japan.</p>
-</div>
+			<div id="Stats" class="tabcontent">
+			  <h3>Stats</h3>
+			  <p>Extra Points is the capital of Japan.</p>
+			</div>
 
-</center>
-</body>
+		</center>
+	</body>
+</html>
