@@ -8,9 +8,12 @@ var made = 0;
 var attempt = 0;
 var n;
 
+document.getElementById("fg").click();
+
 function madeTd(){
 	if (n == 1) {
 		document.getElementById("fg").click();
+		document.getElementById("tdMade").innerHTML = "Made";
 	}
 	
 	else {
@@ -23,7 +26,10 @@ function madeTd(){
 }
 
 function missTd() {
-	attempt += 1;
+	if (n == 1) {
+		document.getElementById("tp").click();
+		document.getElementById("tdMiss").innerHTML = "Miss";
+	}
 }
 
 
