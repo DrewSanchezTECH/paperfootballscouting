@@ -19,7 +19,7 @@ div.tab button:hover {
     background-color: #ddd;
 }
 
-div.tab button.active {
+div.tab .active {
     background-color: #ccc;
 }
 
