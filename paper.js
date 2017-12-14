@@ -9,6 +9,7 @@ var attempts = 0;
 var n;
 
 var teamName = "";
+var teamNames = [];
 
 //document.getElementById("fg").click();
 
@@ -66,5 +67,5 @@ function openTab(evt, cityName) {
 
 function addTeamName() {
    teamName = document.getElementById("teamName").value;
-   document.getElementById("listNames").innerHTML = "<button>" + teamName + "</button>";
+   teamNames.push(teamName);
 }
