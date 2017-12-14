@@ -5,20 +5,23 @@ var ep;
 var epPossible;
 
 var made = 0;
-var attempt = 0;
+var attempts = 0;
 var n;
+
+var teamName = "";
 
 document.getElementById("fg").click();
 
 function madeTd(){
 	if (n == 1) {
+	  attempts += 1;
 		document.getElementById("fg").click();
 		document.getElementById("tdMade").innerHTML = "Made";
 	}
 	
 	else {
 		made += 1;
-		attempt += 1;
+		attempts += 1;
 		document.getElementById("tdMade").innerHTML = "Field Goal";
 		document.getElementById("tdMiss").innerHTML = "Two Point";
 		n = 1;
@@ -26,13 +29,22 @@ function madeTd(){
 }
 
 function missTd() {
-  attempt += 1;
+  attempts += 1;
 	if (n == 1) {
 		document.getElementById("tp").click();
 		document.getElementById("tdMiss").innerHTML = "Miss";
 	}
 }
 
+function stats() {
+  if (attempts == 0) {
+    document.getElementById("error").innerHTML = "Error, attempts equal 0. Please add attempt(s).";
+  } else {
+    var stats = made/attempts;
+    document.getElementById("statForTeam").innerHTML = stats;
+  }
+  
+}
 
 function openTab(evt, cityName) {
 	
@@ -50,4 +62,8 @@ function openTab(evt, cityName) {
 
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
+}
+
+function addTeamName() {
+   teamName = document.getElementById("tdMiss").innerHTML = "Miss";
 }

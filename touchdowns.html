@@ -9,6 +9,7 @@
 	<body>
 
 	<div class="tab">
+	  <button id="st" class="tablinks" onclick="openTab(event, 'Teams')">Teams</button>
 		<button id="td" class="tablinks" onclick="openTab(event, 'Touchdowns')">Touchdowns</button>
 		<button id="fg" class="tablinks" onclick="openTab(event, 'Field Goals')">Field Goals</button>
 		<button id="tp" class="tablinks" onclick="openTab(event, 'Two Points')">Extra Points</button>
@@ -17,12 +18,12 @@
 
 		<center>
 		  
-		  <div id="Team Names" class="tabcontent">
+		  <div id="Teams" class="tabcontent">
 			  <h3>Teams</h3>
 			  <p>
-				<button onclick="fgMade"></button>
-				<button onclick="fgMiss"></button>
-			</p>
+            <input type="text" name="teamname" value="Team Name"><br>
+				    <button onclick="addTeamName()">Add Team</button>
+			   </p>
 			</div>
 
 			<div id="Touchdowns" class="tabcontent">
@@ -52,7 +53,7 @@
 
 			<div id="Stats" class="tabcontent">
 			  <h3>Stats</h3>
-			  <p>Stuf</p>
+			  <p></p>
 			</div>
 
 		</center>
