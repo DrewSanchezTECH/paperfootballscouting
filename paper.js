@@ -10,7 +10,7 @@ var n;
 
 var teamName = "";
 
-document.getElementById("fg").click();
+//document.getElementById("fg").click();
 
 function madeTd(){
 	if (n == 1) {
@@ -65,5 +65,6 @@ function openTab(evt, cityName) {
 }
 
 function addTeamName() {
-   teamName = document.getElementById("tdMiss").innerHTML = "Miss";
+   teamName = document.getElementById("teamName").value;
+   document.getElementById("listNames").innerHTML = "<button>" + teamName + "</button>";
 }
