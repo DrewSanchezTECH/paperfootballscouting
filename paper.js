@@ -26,7 +26,7 @@ function madeTd(){
 }
 
 function missTd() {
-  attempt++;
+  attempt += 1;
 	if (n == 1) {
 		document.getElementById("tp").click();
 		document.getElementById("tdMiss").innerHTML = "Miss";
